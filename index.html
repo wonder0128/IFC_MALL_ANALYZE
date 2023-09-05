@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>INFORMATION</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons.png">
+
+    <link rel="stylesheet" href="include/css/comm.css">
+    <link rel="stylesheet" href="include/css/component.css">
+    <link rel="stylesheet" href="include/css/index.css">
+
+    <script src="include/js/lib/jquery-3.2.1.js"></script>
+    <script src="include/js/lib/jquery.xml2json.js"></script>
+    <script src="include/js/lib/hangul.js"></script>
+    <script src="include/js/index.js"></script>
+    <script src="include/js/xml.js"></script>
+    <script src="include/js/comm.js"></script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+    <div class="debug_area" style="width:400px;">
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('KOR');">KOR</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('ENG');">ENG</button>
+        <button class="btn" onMouseDown="javascript:onClickDebug01('');">SEARCH</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('START');">START</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('STOP');">STOP</button>
+    </div>
+
+
+    <div id="id_page_block_white" class="block_main" style="display:none;"></div>
+
+<!--    <div id="id_main_screen" style="display:none;" class="list_main" onMouseDown="javascript:onClickScreenSaver();">-->
+<!--        <div class="list_area">-->
+<!--            &lt;!&ndash; NOTICE START //&ndash;&gt;-->
+<!--            <div id="id_page_notice_list" class="notice_main">-->
+<!--                <div class="bg"><img src="commonfiles/bg/BG.png" alt="img"></div>-->
+<!--                <div class="screen_txt">화면 터치 시 안내 키오스크로 변경됩니다.</div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; NOTICE END //&ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <div id="id_main_init_loading" class="contents_loading" style="display:no1ne;">
+        <div class="contents">
+            <!--<img src="images/main_logo.png">-->
+            <div class="progress">
+                <div class="progress_bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENTS START //-->
+    <div class="sub_page_main">
+        <!-- <div id="id_main_frame_intro" class="frame_info" style="display:none;">
+            <iframe name="frame_intro" src="intro.html"></iframe>
+        </div> -->
+        <div id="id_main_frame_floor" class="frame_info" style="display:none; z-index:1;">
+            <iframe name="frame_floor" src="floor.html"></iframe>
+        </div>
+        <!-- <div id="id_main_frame_store" class="frame_info" style="display:none;">
+            <iframe name="frame_store" src="store.html"></iframe>
+        </div> -->
+        <!-- <div id="id_main_frame_food" class="frame_info" style="display:none;">
+            <iframe name="frame_food" src="food.html"></iframe>
+        </div>
+        <div id="id_main_frame_event" class="frame_info" style="display:none;">
+            <iframe name="frame_event" src="event.html"></iframe>
+        </div>
+        <div id="id_main_frame_nearby" class="frame_info" style="display:none;">
+            <iframe name="frame_nearby" src="nearby.html"></iframe>
+        </div>
+        <div id="id_main_frame_discount" class="frame_info" style="display:none;">
+            <iframe name="frame_discount" src="discount.html"></iframe>
+        </div>
+        <div id="id_main_frame_facility" class="frame_info" style="display:none;">
+            <iframe name="frame_facility" src="facility.html"></iframe>
+        </div>
+        <div id="id_main_frame_membership" class="frame_info" style="display:none;">
+            <iframe name="frame_membership" src="membership.html"></iframe>
+        </div>
+        <div id="id_main_frame_pet" class="frame_info" style="display:none;">
+            <iframe name="frame_pet" src="pet.html"></iframe>
+        </div> -->
+
+        <div class="bottom_title">
+            <div class="location_bg">
+                <div id="location" class="location">
+                    <h2>- PLEASE SELECT A GUIDE -</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- CONTENTS END //-->
+    <!-- 하부 -->
+    <div class="bottom_menu">
+        <div class="bottom_t">
+            <div class="bottom_btn_li" data-pattern="pink">
+                <div code="floor" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#D35589">
+                        <img src="images/menu/menu_ico_1-floor.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_FLOOR">층별안내</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="purple">
+                <div code="store" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#A78EC2">
+                        <img src="images/menu/menu_ico_2-search.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_STORE">매장안내</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="yellow">
+                <div code="food" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#ECDB63">
+                        <img src="images/menu/menu_ico_3-fnb.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_FOOD">식당안내</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="pink">
+                <div code="event" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#D35589">
+                        <img src="images/menu/menu_ico_4-event.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_EVENT">행사안내</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="blue">
+                <div code="nearby" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#63A7DB">
+                        <img src="images/menu/menu_ico_5-nearby.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_PERIPHERAL">주변시설</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="blue">
+                <div code="discount" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#63A7DB">
+                        <img src="images/menu/menu_ico_6-parking.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_PARK_INFO">주차안내</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="blue">
+                <div code="facility" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#63A7DB">
+                        <img src="images/menu/menu_ico_7-information.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_FACILITY">주변시설</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="pink">
+                <div code="membership" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#D35589">
+                        <img src="images/menu/menu_ico_8-membership.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_MEMBERSHIP">멤버쉽<br/>상품권</div>
+                </div>
+            </div>
+            <div class="bottom_btn_li" data-pattern="green">
+                <div code="pet" class="bottom_btn">
+                    <div class="bottom_btn_ico" style="--data-color:#5AB786">
+                        <img src="images/menu/menu_ico_9-pet.svg">
+                    </div>
+                    <div class="lang_code_names bottom_btn_text" lang_code="BOTTOM_MNU_COMPANION_GUIDE">반려동물<br/>동반안내</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_b">
+            <div class="bottom_time_zone">
+                <div>
+                    <div class="txt0">
+                        <div class="lang_code_names" lang_code="">IFC MALL</div>
+                    </div>
+                    <div class="time0">
+                        <div class="lang_code_names" lang_code="BOTTOM_MNU_TXT3">AM 10:00 ~ PM 10:00 (공휴일 포함)</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="txt0">
+                        <div class="lang_code_names" lang_code="">IFC STREET SHOP</div>
+                    </div>
+                    <div class="time0">
+                        <div class="lang_code_names" lang_code="BOTTOM_MNU_TXT3">AM 10:00 ~ PM 09:00 (공휴일 포함)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang_area">
+                <div class="lang_txt_area">LANGUAGE</div>
+                <div class="lang_btn">
+                    <div id="id_lang_btn_kor" code="KOR" lang_code="BOTTOM_MNU_TXT4" class="lang_code_names lang_txt active">한국어</div>
+                </div>
+                <div class="lang_btn">
+                    <div id="id_lang_btn_eng" code="ENG" class="lang_txt">ENG</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--매장 팝업-->
+    <div id="id_popup_store" class="popup_store" style="display:none">
+        <div class="popup_base">
+            <div class="popup_box">
+                <div class="img_box">
+                    <div id="id_pop_store_thumb" class="thumb"><img src=""></div>
+                </div>
+                <div class="txt_box">
+                    <h2 id="id_pop_store_title" class="store_name">샤넬</h2>
+                    <ul>
+                        <li>
+                            <div class="txt_left lang_code_names">Location</div>
+                            <div id="id_pop_store_floor" class="store_floor">L1</div>
+                        </li>
+                        <li>                        
+                            <div class="txt_left lang_code_names" lang_code="POP_CATEGORY_TXT">Category</div>
+                            <div id="id_pop_store_category" lang_code="" class="lang_code_names">뷰티&헤어</div></li>
+                        <li>
+                            <div class="txt_left lang_code_names" lang_code="POP_TEL_TXT">TEL</div>
+                            <div id="id_pop_store_phone" class="txt_right">02-000-0000</div>
+                        </li>
+                        <li>
+                            <div class="txt_left lang_code_names" lang_code="POP_HOUR_TXT">OPENING HOURS</div>
+                            <div id="id_pop_store_time" class="txt_right">AM 10:00 ~ PM 10:00</div>
+                        </li>
+                    </ul>
+                    <div class="popup_location_box">
+                        <button id="id_btn_location" class="btn_location" onMouseDown="javascript:onClickPopUpWayFind('LOCATION','STORE',0);">
+                            <div class="way_img">
+                                <img src="images/popup_ico_location.svg">
+                            </div>
+                            <div class="way_txt lang_code_names" lang_code="POP_WAYFIND_LOCATION">위치안내</div>
+                        </button>
+                        <button id="id_btn_wayfind" class="btn_wayfind" onMouseDown="javascript:onClickPopUpWayFind('WAYFIND','STORE',0);">
+                            <div class="way_img">
+                                <img src="images/popup_ico_wayfinding.svg">
+                            </div>
+                            <div class="way_txt lang_code_names" lang_code="POP_WAYFIND_WAYFIND">길안내</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn_close" onMouseDown="javascript:onClickPopupClose('STORE');"><img src="images/popup_bt_close.svg"></div>
+        </div>
+        <div class="popup_close_cover" onMouseDown="javascript:onClickPopupClose('STORE');"></div>
+    </div>
+
+    <!--이동수단 팝업-->
+    <div id="id_popup_waytype" class="popup_way" style="display:none;">
+        <div class="popup_base">
+            <div class="btn_close" onMouseDown="javascript:onClickPopupClose('WAYTYPE');"><img src="images/popup_bt_close.svg"></div>
+            <div class="pop_waytype_box">
+                <div class="title lang_code_names" lang_code="POP_WAYTYPE_TITLE">원하시는 이동수단을 선택해 주세요.</div>
+                <div>
+                    <button class="btn_ele" onMouseDown="javascript:onClickPopupWayType('ELE');">
+                       <img src="images/floor_popup/floor_popup_bt_ele.svg">
+                       <img src="images/floor_popup/floor_popup_bt_ele_o.svg">
+                        <p class="lang_code_names" lang_code="POP_WAYTYPE_ELE">엘리베이터</p>
+                    </button>
+                    <button class="btn_esc" onMouseDown="javascript:onClickPopupWayType('ESC');">
+                       <img src="images/floor_popup/floor_popup_bt_esc.svg">
+                       <img src="images/floor_popup/floor_popup_bt_esc_o.svg">
+                        <p class="lang_code_names" lang_code="POP_WAYTYPE_ESC">에스컬레이터</p>
+                    </button>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- POPUP FACILITY START //-->
+    <div id="id_popup_nearby" class="popup_nearby" style="display:none">
+        <div class="popup_base">
+            <div class="popup_box">
+                <div class="img_box">
+                    <div id="id_pop_nearby_thumb" class="thumb"><img src=""></div>
+                </div>
+                <div class="txt_box">
+                    <h2 id="id_pop_nearby_title" class="nearby_name">샤넬</h2>
+                    <ul>
+                        <li>
+                            <div class="txt_left lang_code_names">Location</div>
+                            <div id="id_pop_nearby_floor" >
+                                <span class="nearby_fac">One IFC</span>
+                                <span class="nearby_floor"><strong>GL</strong></span>
+                            </div>
+                        </li>
+                        <li>                        
+                            <div class="txt_center lang_code_names" lang_code="">
+                                <pre class="nearby_desc">
+                                    <span>테슬라</span> 매장은<br/>
+                                    <span>One IFC</span> 건물 <span>GL</span>층에 위치하고 있습니다.
+                                </pre>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="popup_location_desc lang_code_names" lang_code="POP_WAYFIND">IFC몰에서 찾아가시는 방향을 안내해드립니다.</p>
+                    <div class="popup_location_box">
+                        <button id="id_btn_location" class="btn_location" onMouseDown="javascript:onClickPopUpWayFind('LOCATION','NEARBY',0);">
+                            <div class="way_img">
+                                <img src="images/popup_ico_location.svg">
+                            </div>
+                            <div class="way_txt lang_code_names" lang_code="POP_WAYFIND_LOCATION">위치안내</div>
+                        </button>
+                        <button id="id_btn_wayfind" class="btn_wayfind" onMouseDown="javascript:onClickPopUpWayFind('WAYFIND','NEARBY',0);">
+                            <div class="way_img">
+                                <img src="images/popup_ico_wayfinding.svg">
+                            </div>
+                            <div class="way_txt lang_code_names" lang_code="POP_WAYFIND_WAYFIND">길찾기</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn_close" onMouseDown="javascript:onClickPopupClose('NEARBY');"><img src="images/popup_bt_close.svg"></div>
+        </div>
+        <div class="popup_close_cover" onMouseDown="javascript:onClickPopupClose('NEARBY');"></div>
+    </div>
+
+    <!--주차위치 안내 불가 팝업-->
+    <div id="id_popup_nopark" class="popup_nopark" style="display:none;">
+        <div class="popup_base">
+            <div class="btn_close" onMouseDown="javascript:onClickPopupClose('NOPARK');"><img src="images/popup_bt_close.svg"></div>
+            <div class="pop_nopark_box">
+                <div class="title" lang_code="">검색결과가 없습니다</div>
+                <div class="desc" lang_code=""><font style="color:#DC0012;">달 주차장 4.5층 옥외주차장</font>  과 <font style="color:#DC0012;">별주차장</font> 은 검색되지 않습니다.<br>이용에 불편을 드려 죄송합니다.</div>
+                <div>
+                    <button class="btn_0" onMouseDown="javascript:onClickPopupWayType('ESC');">
+                       <img src="images/brand_ico_location.svg">
+                        <p class="btn_title" lang_code="">달 주차장 4.5층</p>
+                        <p class="btn_desc" lang_code="">위치안내</p>
+                    </button>
+                    <button class="btn_1" onMouseDown="javascript:onClickPopupWayType('ELE');">
+                       <img src="images/brand_ico_location.svg">
+                        <p class="btn_title" lang_code="">별 주차장 지하1층</p>
+                        <p class="btn_desc" lang_code="">위치안내</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP FACILITY START //-->
+    <div id="id_popup_fac" class="popup_faci" style="display:none;">
+        <div class="popup_base">
+            <div class="pop_fac_box">
+                <div class="img_box"><img src=""></div>
+                <div class="desc">
+                    <div class="title">화장실</div>
+                    <div id="id_pop_fac_floor" class="right_floor"></div>
+                    <div class="left lang_code_names" lang_code="POP_DESC_TXT">현재위치에서 가까운 시설을 안내해드립니다</div>
+                    <div class="location" onMouseDown="javascript:onClickPopUpWayFind('LOCATION','FACILITY');">
+                        <div class="btn_loc">
+                            <img src="images/popup_ico_location.svg">
+                            <div class="txt lang_code_names" lang_code="POP_WAYFIND_LOCATION">위치안내</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+            </div>
+            <div class="btn_close" onMouseDown="javascript:onClickPopupClose('FACILITY');"><img src="images/popup_bt_close.svg"></div>
+        </div>
+    </div>
+
+
+
+    <div class="zdebug_img" style="display:none;"><img src="images/zguide/4_식당웨이팅_2-1.jpg"></div>
+</body></html>
+
+<script l1nguage="javascript">
+    var MAINPARENTCUSTOMCODE = true;
+    // window.self.location = "floor.html";
+
+    function setInit() {
+        //$("#id_main_init_loading .progress_bar").addClass("run");
+
+        setLoadLanguage("include/kiosk_lang.json");
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        $(".debug_area").hide();
+        setTimeout(setInit, 1000);
+
+    });
+
+</script>

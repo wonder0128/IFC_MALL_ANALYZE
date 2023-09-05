@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="floor_ico_here_o" transform="translate(-117 -352)">
+    <rect id="사각형_970" data-name="사각형 970" width="40" height="40" rx="3" transform="translate(117 352)" fill="#fff"/>
+    <g id="popup_ico_location" transform="translate(128.432 359.539)">
+      <path id="빼기_6" data-name="빼기 6" d="M8.568,24.348h0L6.783,22.066c-.3-.433-.61-.879-.94-1.351C3.239,16.994,0,12.364,0,8.6a8.568,8.568,0,1,1,17.136,0,14.222,14.222,0,0,1-2.156,6.586,67.927,67.927,0,0,1-4.2,6.4l0,.006-.337.473L8.568,24.347ZM8.567,5a3.586,3.586,0,1,0,3.574,3.587A3.584,3.584,0,0,0,8.567,5Z" fill="#dc0012"/>
+    </g>
+  </g>
+</svg>

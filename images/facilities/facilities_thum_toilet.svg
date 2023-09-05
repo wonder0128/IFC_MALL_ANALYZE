@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="facility_list_img_toilet" transform="translate(-40.826 -38.565)">
+    <path id="facility_list" d="M0,0H100V100H0Z" transform="translate(40.826 38.565)" fill="none"/>
+    <g id="그룹_1728" data-name="그룹 1728" transform="translate(74.082 53.335)">
+      <g id="그룹_1696" data-name="그룹 1696" transform="translate(0 0)">
+        <path id="패스_3499" data-name="패스 3499" d="M318.772,1680.008l-3.856,15.077h0v24.41h-2.05v-24.41h-3.388v-37.9h9.3Zm-3.856-25.7v-5.269h-2.05v5.269Z" transform="translate(-309.477 -1649.036)" fill="#212121"/>
+      </g>
+    </g>
+    <g id="그룹_1729" data-name="그룹 1729" transform="translate(96.487 53.564)">
+      <path id="패스_3533" data-name="패스 3533" d="M346.214,1654.308v-5.27h2.048v5.27Zm4.766,25.5v-22.655h-6.992l-2.267,6.9v30.9h4.493v24.32h2.048v-24.32H354.8Z" transform="translate(-341.721 -1649.038)" fill="#212121"/>
+    </g>
+  </g>
+</svg>

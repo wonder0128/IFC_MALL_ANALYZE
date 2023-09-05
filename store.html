@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>INFORMATION</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons.png">
+
+    <link rel="stylesheet" href="include/css/comm.css">
+    <link rel="stylesheet" href="include/css/component.css">
+    <link rel="stylesheet" href="include/css/store.css">
+
+    <script src="include/js/lib/jquery-3.2.1.js"></script>
+    <script src="include/js/lib/jquery.xml2json.js"></script>
+    <script src="include/js/lib/hangul.js"></script>
+    <script src="include/js/comm.js"></script>
+    <script src="include/js/xml.js"></script>
+    <script src="include/js/store.js"></script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+    <div class="debug_area" style="width:500px;">
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('KOR');">KOR</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('ENG');">ENG</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('CHN');">CHN</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('JPN');">JPN</button>
+        <button class="btn" onMouseDown="javascript:onClickDebug01('');">SEARCH</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('START');">START</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('STOP');">STOP</button>
+    </div>
+
+    <div>
+        <!-- LIST START -->
+        <div id="id_list_area" class="list_main">
+            <div id="id_store_cover" class="cover">
+                <div id="id_store_list" class="store_list">
+                    <div id="id_page_no_result" class="store_no_result">
+                        <p class="lang_code_names" lang_code="STORE_NO_RESULT">검색결과가 없습니다</p>
+                    </div>
+                </div>
+            </div>
+            <div class="paging_main">
+                <div class="store_arrow_prev"><img id="id_paging_prev" code="PREV" src="images/ico_page_arrow_l_o.svg"
+                        onMouseDown="javascript:onClickPagingNum(this);"></div>
+                <div id="id_store_paging" class="event_paging"></div>
+                <div class="store_arrow_next"><img id="id_paging_next" code="NEXT" src="images/ico_page_arrow_r_o.svg"
+                        onMouseDown="javascript:onClickPagingNum(this);"></div>
+            </div>
+        </div>
+        <!-- LIST END -->
+
+        <div class="bottom_wrap">
+            <div class="bottom_main">
+                <!-- LEFT AREA START -->
+                <div class="left_main">
+                    <div class="left_btns">
+                        <div class="btn_left_type" code="KEYWORD">
+                            <div class="btn_left_search">
+                                <div class="txt_zone">
+                                    <div class="lang_code_names txt" lang_code="STORE_CTG_INIT">초성/알파벳 검색</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_left_type" code="CATEGORY">
+                            <div class="btn_left_search">
+                                <div class="txt_zone">
+                                    <div class="lang_code_names txt" lang_code="STORE_CTG_SEARCH">카테고리 검색</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_left_type" code="FLOOR">
+                            <div class="btn_left_search">
+                                <div class="txt_zone">
+                                    <div class="lang_code_names txt" lang_code="STORE_CTG_FLOOR">층별 검색</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LEFT AREA END-->
+
+                <!-- RIGHT AREA START -->
+                <div class="search_main">
+                    <div id="id_search_type_keyword" class="keyword_main" style="display: none;">
+                        <div class="keyword_box">
+                            <div class="keyword_input">
+                                <div class="input_box">
+                                    <span class="left">
+
+                                    </span>
+                                    <span class="center">
+                                        <input id="id_txt_search_keyword" class="lang_code_names"
+                                            lang_code="STORE_INIT_TXT" type="text" value=""
+                                            placeholder="찾고자 하시는 매장의 초성을 선택해주세요">
+                                    </span>
+                                    <span class="right"><img src="images/search_bar_clear.svg"
+                                            onMouseDown="javascript:onClickSearchKeyDel('NUM');"></span>
+                                    <span class="right"><img src="images/img_comm_x_circle.svg"
+                                            onMouseDown="javascript:onClickSearchKeyDel('ALL');"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="keyword_bottom">
+                            <div class="keyword_type_btns">
+                                <div id="id_lang_btn_kor" code="KOR" class="btn_right_type">
+                                    <div class="txt">ㄱ ㄴ ㄷ</div>
+                                </div>
+                                <div id="id_lang_btn_eng" code="ENG" class="btn_right_type">
+                                    <div class="txt">A B C</div>
+                                </div>
+                                <div id="id_lang_btn_num" code="NUM" class="btn_right_type">
+                                    <div class="txt">1 2 3</div>
+                                </div>
+                            </div>
+
+                            <div class="keyword_list_main">
+                                <div id="id_lang_list_kor" class="list_main_kor">
+                                    <ul class="list_kor">
+                                        <li code="ㄱ">
+                                            <span class="circle_darkgray">ㄱ</span>
+                                        </li>
+                                        <li code="ㄲ">
+                                            <span class="circle_darkgray">ㄲ</span>
+                                        </li>
+                                        <li code="ㄴ">
+                                            <span class="circle_darkgray">ㄴ</span>
+                                        </li>
+                                        <li code="ㄷ">
+                                            <span class="circle_darkgray">ㄷ</span>
+                                        </li>
+                                        <li code="ㄸ">
+                                            <span class="circle_darkgray">ㄸ</span>
+                                        </li>
+                                        <li code="ㄹ">
+                                            <span class="circle_darkgray">ㄹ</span>
+                                        </li>
+                                        <li code="ㅁ">
+                                            <span class="circle_darkgray">ㅁ</span>
+                                        </li>
+                                        <li code="ㅂ">
+                                            <span class="circle_darkgray">ㅂ</span>
+                                        </li>
+                                        <li code="ㅃ">
+                                            <span class="circle_darkgray">ㅃ</span>
+                                        </li>
+                                        <li code="ㅅ">
+                                            <span class="circle_darkgray">ㅅ</span>
+                                        </li>
+                                        <li code="ㅆ">
+                                            <span class="circle_darkgray">ㅆ</span>
+                                        </li>
+                                        <li code="ㅇ">
+                                            <span class="circle_darkgray">ㅇ</span>
+                                        </li>
+                                        <li code="ㅈ">
+                                            <span class="circle_darkgray">ㅈ</span>
+                                        </li>
+                                        <li code="ㅉ">
+                                            <span class="circle_darkgray">ㅉ</span>
+                                        </li>
+                                        <li code="ㅊ">
+                                            <span class="circle_darkgray">ㅊ</span>
+                                        </li>
+                                        <li code="ㅋ">
+                                            <span class="circle_darkgray">ㅋ</span>
+                                        </li>
+                                        <li code="ㅌ">
+                                            <span class="circle_darkgray">ㅌ</span>
+                                        </li>
+                                        <li code="ㅍ">
+                                            <span class="circle_darkgray">ㅍ</span>
+                                        </li>
+                                        <li code="ㅎ">
+                                            <span class="circle_darkgray">ㅎ</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="id_lang_list_eng" class="list_main_eng">
+                                    <ul class="list_eng">
+                                        <li code="A">
+                                            <span class="circle_darkgray">A</span>
+                                        </li>
+                                        <li code="B">
+                                            <span class="circle_darkgray">B</span>
+                                        </li>
+                                        <li code="C">
+                                            <span class="circle_darkgray">C</span>
+                                        </li>
+                                        <li code="D">
+                                            <span class="circle_darkgray">D</span>
+                                        </li>
+                                        <li code="E">
+                                            <span class="circle_darkgray">E</span>
+                                        </li>
+                                        <li code="F">
+                                            <span class="circle_darkgray">F</span>
+                                        </li>
+                                        <li code="G">
+                                            <span class="circle_darkgray">G</span>
+                                        </li>
+                                        <li code="H">
+                                            <span class="circle_darkgray">H</span>
+                                        </li>
+                                        <li code="I">
+                                            <span class="circle_darkgray">I</span>
+                                        </li>
+                                        <li code="J">
+                                            <span class="circle_darkgray">J</span>
+                                        </li>
+                                        <li code="K">
+                                            <span class="circle_darkgray">K</span>
+                                        </li>
+                                        <li code="L">
+                                            <span class="circle_darkgray">L</span>
+                                        </li>
+                                        <li code="M">
+                                            <span class="circle_darkgray">M</span>
+                                        </li>
+                                        <li code="N">
+                                            <span class="circle_darkgray">N</span>
+                                        </li>
+                                        <li code="O">
+                                            <span class="circle_darkgray">O</span>
+                                        </li>
+                                        <li code="P">
+                                            <span class="circle_darkgray">P</span>
+                                        </li>
+                                        <li code="Q">
+                                            <span class="circle_darkgray">Q</span>
+                                        </li>
+                                        <li code="R">
+                                            <span class="circle_darkgray">R</span>
+                                        </li>
+                                        <li code="S">
+                                            <span class="circle_darkgray">S</span>
+                                        </li>
+                                        <li code="T">
+                                            <span class="circle_darkgray">T</span>
+                                        </li>
+                                        <li code="U">
+                                            <span class="circle_darkgray">U</span>
+                                        </li>
+                                        <li code="V">
+                                            <span class="circle_darkgray">V</span>
+                                        </li>
+                                        <li code="W">
+                                            <span class="circle_darkgray">W</span>
+                                        </li>
+                                        <li code="X">
+                                            <span class="circle_darkgray">X</span>
+                                        </li>
+                                        <li code="Y">
+                                            <span class="circle_darkgray">Y</span>
+                                        </li>
+                                        <li code="Z">
+                                            <span class="circle_darkgray">Z</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="id_lang_list_num" class="list_main_num">
+                                    <ul class="list_num">
+                                        <li code="1">
+                                            <span class="circle_darkgray">1</span>
+                                        </li>
+                                        <li code="2">
+                                            <span class="circle_darkgray">2</span>
+                                        </li>
+                                        <li code="3">
+                                            <span class="circle_darkgray">3</span>
+                                        </li>
+                                        <li code="4">
+                                            <span class="circle_darkgray">4</span>
+                                        </li>
+                                        <li code="5">
+                                            <span class="circle_darkgray">5</span>
+                                        </li>
+                                        <li code="6">
+                                            <span class="circle_darkgray">6</span>
+                                        </li>
+                                        <li code="7">
+                                            <span class="circle_darkgray">7</span>
+                                        </li>
+                                        <li code="8">
+                                            <span class="circle_darkgray">8</span>
+                                        </li>
+                                        <li code="9">
+                                            <span class="circle_darkgray">9</span>
+                                        </li>
+                                        <li code="0">
+                                            <span class="circle_darkgray">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="id_search_type_category" class="cate_main">
+                        <div class="cate_top">
+                            <div>
+                                <div code="S0100" class="cate_btn active">
+                                    <img src="images/store/store_category_all.svg">
+                                    <img src="images/store/store_category_all_o.svg">
+                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S00">전체</div>
+                                </div>
+                                <div code="S0101" class="cate_btn">
+                                    <img src="images/store/store_category_fashion.svg">
+                                    <img src="images/store/store_category_fashion_o.svg">
+                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S01">패션</div>
+                                </div>
+                                <div code="S0102" class="cate_btn">
+                                    <img src="images/store/store_category_acc.svg">
+                                    <img src="images/store/store_category_acc_o.svg">
+                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S02">패션액세서리</div>
+                                </div>
+                                <div code="S0103" class="cate_btn">
+                                    <img src="images/store/store_category_beauty.svg">
+                                    <img src="images/store/store_category_beauty_o.svg">
+                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S03">뷰티</div>
+                                </div>
+                                <div code="S0104" class="cate_btn">
+                                    <img src="images/store/store_category_living.svg">
+                                    <img src="images/store/store_category_living_o.svg">
+                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S04">생활/문화</div>
+                                </div>
+                                <div code="S0105" class="cate_btn">
+                                    <img src="images/store/store_category_sport.svg">
+                                    <img src="images/store/store_category_sport_o.svg">
+                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S05">스포츠</div>
+                                </div>
+<!--                                <div code="S0106" class="cate_btn">-->
+<!--                                    <img src="images/store/store_category_fnb.svg">-->
+<!--                                    <img src="images/store/store_category_fnb_o.svg">-->
+<!--                                    <div class="lang_code_names btn_txt" lang_code="STORE_CATE_MAIN_S05">식음료</div>-->
+<!--                                </div>-->
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="id_search_type_floor" class="floor_main">
+                        <div class="floor_top">
+                            <ul class="list_floor">
+                                <div class="floor_btn" code="L1"><span class="floor_btn_base rect_gray01bg">L1</span></div>
+                                <div class="floor_btn" code="L2"><span class="floor_btn_base rect_gray01bg">L2</span></div>
+                                <div class="floor_btn IFC" code="IFC-Street-Shop"><span class="floor_btn_base rect_gray01bg">IFC<br />STREET<br />SHOP</span></div>
+                                <div class="floor_btn" code="L3"><span class="floor_btn_base rect_gray01bg">L3</span></div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script language="javascript">
+    var PAGEACTIVEYN = false;
+
+    function setInit() {
+
+        if (parent.MAINPARENTCUSTOMCODE) {
+            $(".debug_area").hide();
+            PAGEACTIVEYN = false;
+            setInitSetting("SUCC");
+        } else {
+            PAGEACTIVEYN = true;
+            setLoadLanguage("include/kiosk_lang.json");
+            setLoadDataContents(kiosk_contents_url);
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+        setTimeout(setInit, 50);
+    });
+</script>

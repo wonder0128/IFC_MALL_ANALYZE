@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="menu_ico_1-floor" transform="translate(-27.016 -1700.76)">
+    <path id="패스_3443" data-name="패스 3443" d="M-9639.632-20992.492l13.637-11.361,20.453-13.07h3.789l4.926,5.3,2.084,25-7.01,6.061h-36.741l-3.6-3.412Z" transform="translate(9678.603 22736.611)" fill="none" stroke="#212121" stroke-width="2.73"/>
+    <g id="floor_minimap_here" transform="translate(48.969 1715.84)">
+      <g id="그룹_224" data-name="그룹 224" transform="translate(0 0)">
+        <path id="패스_426" data-name="패스 426" d="M11.179,0A11.179,11.179,0,0,0,0,11.183c0,5.513,6.049,12.268,9.2,17.3l1.983,3.172,1.983-3.172c.164-.262.335-.528.674-1.042,3.086-4.692,8.522-11.035,8.522-16.261A11.179,11.179,0,0,0,11.179,0" transform="translate(0 -0.004)" fill="#1a1311" fill-rule="evenodd"/>
+      </g>
+      <ellipse id="타원_325" data-name="타원 325" cx="3.883" cy="3.883" rx="3.883" ry="3.883" transform="translate(7.168 7.236)" fill="#fff"/>
+    </g>
+    <rect id="사각형_1779" data-name="사각형 1779" width="70" height="70" transform="translate(27.016 1700.76)" fill="none" opacity="0.54"/>
+  </g>
+</svg>

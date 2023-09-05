@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="facility_list_img_infor" transform="translate(-40.826 -38.565)">
+    <path id="facility_list" d="M0,0H100V100H0Z" transform="translate(40.826 38.565)" fill="none"/>
+    <path id="패스_3651" data-name="패스 3651" d="M0-4H45.61v20.77H0Z" transform="translate(69.02 62.929)" fill="#fff"/>
+    <path id="패스_3651_-_윤곽선" data-name="패스 3651 - 윤곽선" d="M2.588-1.321V14.237l40.554.04V-1.689L2.588-1.729M0-4H45.61v20.77H0Z" transform="translate(69.02 62.929)" fill="#0f0f0f"/>
+    <path id="패스_3663" data-name="패스 3663" d="M41.417,3.225H0V-4H41.417Z" transform="translate(71.029 69.704)" fill="#0f0f0f"/>
+    <path id="패스_3652" data-name="패스 3652" d="M306.1,291.592v33.931h34.754V291.592" transform="translate(-231.65 -210.393)" fill="#0f0f0f"/>
+    <path id="패스_3652_-_윤곽선" data-name="패스 3652 - 윤곽선" d="M342.062,326.878H304.6V291.592h2.71v32.576h32.045V291.592h2.71Z" transform="translate(-231.505 -210.393)" fill="#0f0f0f"/>
+    <path id="패스_3653" data-name="패스 3653" d="M317.885,324.081v-24.7h9.223v24.7" transform="translate(-230.671 -206.408)" fill="#fff"/>
+    <path id="패스_3662" data-name="패스 3662" d="M0,0H19.485V20.773H0Z" transform="translate(82.083 58.929)" fill="#fff"/>
+    <path id="패스_3662_-_윤곽선" data-name="패스 3662 - 윤곽선" d="M2.71,2.71V18.064H16.776V2.71H2.71M0,0H19.485V20.773H0Z" transform="translate(82.083 58.929)" fill="#0f0f0f"/>
+  </g>
+</svg>

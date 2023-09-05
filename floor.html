@@ -1,0 +1,201 @@
+<!---------------------------------------------
+   name :  index.html
+   auth :  ELTOV
+   date :  2021.08.28
+   desc :  메인 HTML
+---------------------------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>INFORMATION</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons.png">
+
+    <link rel="stylesheet" href="include/css/comm.css">
+    <link rel="stylesheet" href="include/css/component.css">
+    <link rel="stylesheet" href="include/css/floor.css">
+    <link rel="stylesheet" href="include/css/eltovway/eltovmap.css">
+
+    <script src="include/js/lib/jquery-3.2.1.js"></script>
+    <script src="include/js/lib/pixi_6.1.2.js"></script>
+    <script src="include/js/tweenmax/TweenLite.js"></script>
+    <script src="include/js/tweenmax/TweenMax.js"></script>
+    <script src="include/js/tweenmax/plugins/CSSPlugin.js"></script>
+    <script src="include/js/comm.js"></script> 
+    <script src="include/js/xml.js"></script>
+    <script src="include/js/floor.js"></script>
+    <!--<script src="include/js/eltovway/zeltovway2d.min.js"></script>-->
+    <script src="include/js/eltovway/eltov2dmap.js"></script>
+    <script src="include/js/eltovway/eltov2dfloor.js"></script>
+    <script src="include/js/eltovway/eltovwayfind.js"></script>
+    <script src="include/js/eltovway/eltovwayutil.js"></script>
+    <script src="include/js/eltovway/eltovwayxml.js"></script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+    <div class="debug_area" style="width:1080px;display:no1ne;">
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('KOR');">KOR</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('ENG');">ENG</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('CHN');">CHN</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('JPN');">JPN</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('START');">START</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('STOP');">STOP</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugWay('7430');">STORE 아웃백</button> <!-- 이자벨 마랑 -->
+        <button class="btn" onMouseDown="javascript:onClickDebugLine();">DEBUG LINE</button><br>
+    </div>
+
+    <!-- CONTENTS START //-->
+    <div class="content">
+
+
+        <div id="id_pop_floor_guide" class="pop_floor_guide" style="display:none;">
+            <img src="images/floor_ico_touch.svg">
+            <div class="desc lang_code_names" lang_code="GUIDE_SWIPE">
+                지도 확대/축소가 가능합니다
+            </div>
+        </div>
+
+        <!-- MAP START //-->
+        <div class="map_area">
+
+            <div id="id_page_wayfind_left" class="wayfind_left" style="display:none;">
+                <div class="start">
+                    <p class="start_floor"></p>
+                </div>
+                <div class="arrow_0"><img src="images/floor_map_ico_arrow.svg"></div>
+                <div class="target">
+                    <p class="target_floor" style="margin-left:200px"></p>
+                </div>
+            </div>
+
+            <div class="center_main">
+                <div class="map_main">
+                    <div id="id_map_main"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="floor_title_area">
+            <div id="id_floor_name_area" class="name_area">
+                <div class="floor_title">
+                    <h2 id="id_floor_main_title" class="floor_name">GL</h2>
+                    <div class="floor_bottom_line"></div>
+                </div>
+                <div class="floor_desc">
+                    <div id="id_floor_sub_title" class="floor_title"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_area">
+            <div class="floor_btns">
+                <div class="btn_here_zone">
+                    <div class="btn_here">
+                        <div class="btn_img">
+                            <img src="images/floor_facilities/floor_bt_here.svg">
+                            <img src="images/floor_facilities/floor_bt_here_o.svg">
+                        </div>
+                        <div class="btn_here_txt lang_code_names" lang_code="FLOOR_HERE">현위치</div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor_info">
+                <div class="faci_btns_area">
+                    <div class="faci_btns">
+                        <div code="P04" class="faci_btn">
+                            <div class="faci_img">
+                                <img src="images/floor_facilities/floor_bt_toilet.svg">
+                                <img src="images/floor_facilities/floor_bt_toilet_o.svg">
+                            </div>
+                            <div class="lang_code_names_fac btn_txt" lang_code="FACILTY_CODE_P03">화장실</div>
+                        </div>
+                        <div code="P01" class="faci_btn">
+                            <div class="faci_img">
+                                <img src="images/floor_facilities/floor_bt_elevator.svg">
+                                <img src="images/floor_facilities/floor_bt_elevator_o.svg">
+                            </div>
+                            <div class="lang_code_names_fac btn_txt" lang_code="FACILTY_CODE_P01">엘리베이터</div>
+                        </div>
+                        <div code="P11" class="faci_btn">
+                            <div class="faci_img">
+                                <img src="images/floor_facilities/floor_bt_locker.svg">
+                                <img src="images/floor_facilities/floor_bt_locker_o.svg">
+                            </div>
+                            <div class="lang_code_names_fac btn_txt" lang_code="FACILTY_CODE_P17">물품보관함</div>
+                        </div>
+                        <div code="P06" class="faci_btn">
+                            <div class="faci_img">
+                                <img src="images/floor_facilities/floor_bt_baby.svg">
+                                <img src="images/floor_facilities/floor_bt_baby_o.svg">
+                            </div>
+                            <div class="lang_code_names_fac btn_txt" lang_code="FACILTY_CODE_P08">유아휴게실</div>
+                        </div>
+                        <div code="P08" class="faci_btn">
+                            <div class="faci_img">
+                                <img src="images/floor_facilities/floor_bt_atm.svg">
+                                <img src="images/floor_facilities/floor_bt_atm_o.svg">
+                            </div>
+                            <div class="lang_code_names_fac btn_txt" lang_code="">ATM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor_desc_area">
+                    <div class="floor_desc_btns">
+                        <div code="GL" class="floor_btn">
+                            <div id="id_floor_title_0" class="floor_title" code="GL" b_code="IFC">GL</div>
+                        </div>
+                        <div code="L1" class="floor_btn">
+                            <div id="id_floor_title_1" class="floor_title" code="L1" b_code="IFC">L1</div>
+                        </div>
+                        <div code="" class="floor_btn">
+                            <div id="id_floor_title_2" class="floor_title" code="L2" b_code="IFC">L2</div>
+                        </div>
+                        <div code="" class="floor_btn">
+                            <div id="id_floor_title_3" class="floor_title IFC" code="IFC-Street-Shop" b_code="IFC">IFC<br/>STREET<br/>SHOP</div>
+                        </div>
+                        <div code="" class="floor_btn">
+                            <div id="id_floor_title_4" class="floor_title" code="L3" b_code="IFC">L3</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENTS END //-->
+
+</body>
+</html>
+
+<script language="javascript">
+
+    var PAGEACTIVEYN = false;
+
+    function setInit(){
+
+        if(parent.MAINPARENTCUSTOMCODE){
+            $(".debug_area").hide();
+            PAGEACTIVEYN = false;
+            setInitSetting("SUCC");
+        }else{
+            PAGEACTIVEYN = true;
+            setLoadLanguage("include/kiosk_lang.json");
+            setLoadDataContents("xml/kiosk_contents.xml");
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', function(){
+        setTimeout(setInit,50);
+    });
+</script>

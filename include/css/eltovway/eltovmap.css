@@ -1,0 +1,52 @@
+/******************************************
+   name :  eltovmap.css
+   auth :  ELTOV
+   date :  2021.08.21
+   desc :  프론트 css
+*******************************************/
+
+
+/* LOADING */
+.loading_main{
+    position:relative;width:100%;height:100%;background:#ffffff;
+}
+
+.loading_main .loader_center {
+    position:absolute;
+    width:250px;
+    left:calc(50% - 150px);
+    top:calc(50% - 50px);
+}
+
+.loading_main .loader_center .loader_txt {
+    text-align:center;
+    padding:5px 0 0 0;
+    color:#DB0000;
+    font-size:14px;
+}
+
+.loading_main .loader_center .loader_circle {
+  display:inline-block;
+  text-align:center;
+  border: 5px solid #EEEEEE;
+  border-radius: 50%;
+  border-top:5px solid #3E4959;
+  margin:0 0 0 95px;
+  width:50px;
+  height:50px;
+  -webkit-animation: loader_circle_spin 2s linear infinite; /* Safari */
+  animation: loader_circle_spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes loader_circle_spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes loader_circle_spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.icon_info_store_txt{transform:translate(-50%,-50%);cursor:pointer;text-align:center;white-space:nowrap;}

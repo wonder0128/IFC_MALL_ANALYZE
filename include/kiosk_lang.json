@@ -1,0 +1,748 @@
+{
+    "index":{
+        
+        "BOTTOM_MNU_TXT0":
+        {
+            "kor":"평일, 일요일",
+            "eng":"Mon~Thu, Sun",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_TXT1":
+        {
+            "kor":"금/토, 공휴일",
+            "eng":"Fri/Sat, Holiday",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_TXT2":
+        {
+            "kor":"SPA",
+            "eng":"SPA",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_TXT3":
+        {
+            "kor":"AM 10:00 ~ PM 10:00 (공휴일 포함)",
+            "eng":"AM 10:00 ~ PM 10:00 (Holiday included)",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_TXT4":
+        {
+            "kor":"한국어",
+            "eng":"KOR",
+            "chn":"",
+            "jpn":""
+        },
+        
+        "BOTTOM_MNU_FLOOR":
+        {
+            "kor":"층별안내",
+            "eng":"Floor Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_STORE":
+        {
+            "kor":"매장안내",
+            "eng":"Store Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_FOOD":
+        {
+            "kor":"F&B",
+            "eng":"F&B",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_EVENT":
+        {
+            "kor":"행사안내",
+            "eng":"Event Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_PERIPHERAL":
+        {
+            "kor":"주변시설",
+            "eng":"Peripheral facilities",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_FACILITY":
+        {
+            "kor":"편의시설",
+            "eng":"Facility information",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_MEMBERSHIP":
+        {
+            "kor":"멤버쉽<br>상품권",
+            "eng":"Membership gift certificate",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_COMPANION_GUIDE":
+        {
+            "kor":"반려동물<br>동반안내",
+            "eng":"Companion Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_PARK_INFO":
+        {
+            "kor":"주차 안내",
+            "eng":"Parking Info",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_PARK":
+        {
+            "kor":"내 차 찾기",
+            "eng":"Parking",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_HOME":
+        {
+            "kor":"처음으로",
+            "eng":"Home",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_LOCATION":
+        {
+            "kor":"위치",
+            "eng":"LOCATION",
+            "chn":"",
+            "jpn":""
+        },
+
+        "POP_TEL":
+        {
+            "kor":"전화",
+            "eng":"TEL",
+            "chn":"",
+            "jpn":""
+        },
+
+        "POP_MENU_TITLE":
+        {
+            "kor":"대표메뉴",
+            "eng":"MAIN MENU",
+            "chn":"",
+            "jpn":""
+        },
+
+        "POP_WAYFIND_LOCATION":
+        {
+            "kor":"위치안내",
+            "eng":"LOCATION",
+            "chn":"",
+            "jpn":""
+        },
+
+        "POP_WAYFIND":
+        {
+            "kor":"IFC몰에서 찾아가시는 방향을 안내해드립니다.",
+            "eng":"I will guide you to the direction of IFC Mall.",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_WAYFIND_WAYFIND":
+        {
+            "kor":"길찾기",
+            "eng":"DIRECTIONS",
+            "chn":"",
+            "jpn":""
+        },
+
+        "POP_DESC_TXT" : {
+            "kor":"현재위치에서 가까운 시설을 안내해드립니다." ,
+            "eng":"e현재위치에서 가까운 시설을 안내해드립니다.",
+            "chn":"",
+            "jpn":""
+        },
+
+        "POP_WAYTYPE_TITLE" : {
+            "kor":"원하시는 이동수단을 선택해 주세요." ,
+            "eng":"Choose the desired means of transportation.",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_WAYTYPE_ELE" : {
+            "kor":"엘리베이터" ,
+            "eng":"Elevator",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_WAYTYPE_ESC" : {
+            "kor":"에스컬레이터" ,
+            "eng":"Escalator",
+            "chn":"",
+            "jpn":""
+        },
+        "BOTTOM_MNU_TIME_1" : {
+            "kor":"* 테넌트별 영업시간이 상이하므로 세부내용 매장안내 참조" ,
+            "eng":"* 테넌트별 영업시간이 상이하므로 세부내용 매장안내 참조",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_LOCATION_TXT" : {
+            "kor":"위치" ,
+            "eng":"Location",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_CATEGORY_TXT" : {
+            "kor":"카테고리" ,
+            "eng":"Category",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_TEL_TXT" : {
+            "kor":"전화번호" ,
+            "eng":"Phone Number",
+            "chn":"",
+            "jpn":""
+        },
+        "POP_HOUR_TXT" : {
+            "kor":"영업시간" ,
+            "eng":"Opening hours",
+            "chn":"",
+            "jpn":""
+        },
+        
+        "ERR_ERRO1" : {
+            "kor" : "장애가 발생하였습니다." ,
+            "eng" : "Error occurred",
+            "chn" : "",
+            "jpn" : ""
+        }
+        
+        
+    },
+    
+    "intro":{
+        "TXT0":
+        {
+            "kor":"(평일/일요일)",
+            "eng":"(Mon~Thu/Sun)",
+            "chn":"",
+            "jpn":""
+        },
+        "TXT1":
+        {
+            "kor":"(금/토, 공휴일)",
+            "eng":"(Fri/Sat, Holiday)",
+            "chn":"",
+            "jpn":""
+        },
+        "TXT2":
+        {
+            "kor":"(SPA)",
+            "eng":"(SPA)",
+            "chn":"",
+            "jpn":""
+        },
+        "INTRO_MAIN_DESC" : {
+            "kor":"원하시는 안내메뉴를 선택해주세요.",
+            "eng":"Please select a menu.",
+            "chn":"",
+            "jpn":""
+        }
+    },
+
+    "floor" : {
+        "GUIDE_SWIPE" : {
+            "kor":"지도 확대/축소가 가능합니다",
+            "eng":"You can see zoom in and zoom out.",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_GL" : {
+            "kor":"GL",
+            "eng":"GL",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_L1" : {
+            "kor":"L1",
+            "eng":"L1",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_L2" : {
+            "kor":"L2",
+            "eng":"L2",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_IFC-Street-Shop" : {
+            "kor":"IFC<br>STREET<br>SHOP",
+            "eng":"IFC<br>STREET<br>SHOP",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_L3" : {
+            "kor":"L3",
+            "eng":"L3",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_HERE" : {
+            "kor":"현위치",
+            "eng":"HERE",
+            "chn":"",
+            "jpn":""
+        }
+    },
+
+    "store" : {
+        "STORE_TITLE" : {
+            "kor":"매장안내" ,
+            "eng":"Store Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_LOCATION" : {
+            "kor":"위치",
+            "eng":"LOCATION",
+            "chn":"",
+            "jpn":""
+        },
+
+        "STORE_CTG_SEARCH" : {
+            "kor":"카테고리 검색" ,
+            "eng":"Category",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CTG_INIT" : {
+            "kor":"초성검색" ,
+            "eng":"Initial/Alphabet",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CTG_FLOOR" : {
+            "kor":"층별 검색" ,
+            "eng":"Floor",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_INIT_TXT" : {
+            "kor":"찾고자 하시는 매장의 초성을 선택해주세요" ,
+            "eng":"Choose the initial consonant of the store you like to find.",
+            "chn":"",
+            "jpn":""
+        },
+
+        "STORE_CATE_MAIN_S00" : {
+            "kor":"전체" ,
+            "eng":"ALL",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S01" : {
+            "kor":"패션" ,
+            "eng":"Fashion",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S02" : {
+            "kor":"패션액세서리" ,
+            "eng":"Fashion Accessories",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S03" : {
+            "kor":"뷰티" ,
+            "eng":"Beauty",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S04" : {
+            "kor":"생활/문화" ,
+            "eng":"life culture",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S05" : {
+            "kor":"스포츠" ,
+            "eng":"Sports",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S06" : {
+            "kor":"F&B" ,
+            "eng":"F&B",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S07" : {
+            "kor":"기타" ,
+            "eng":"etc.",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_NO_RESULT" : {
+            "kor":"검색결과가 없습니다." ,
+            "eng":"No Results Found",
+            "chn":"",
+            "jpn":""
+        }
+    },
+
+    "food" : {
+        "STORE_TITLE" : {
+            "kor":"식당안내" ,
+            "eng":"F&B Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CTG_SEARCH" : {
+            "kor":"카테고리 검색" ,
+            "eng":"Category",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CTG_INIT" : {
+            "kor":"초성검색" ,
+            "eng":"Initial/Alphabet",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CTG_FLOOR" : {
+            "kor":"층별 검색" ,
+            "eng":"Floor",
+            "chn":"",
+            "jpn":""
+        },
+
+        "STORE_CATE_MAIN_S00" : {
+            "kor":"전체" ,
+            "eng":"ALL",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S01" : {
+            "kor":"한식" ,
+            "eng":"Korean cuisine",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S02" : {
+            "kor":"아시안 퓨전" ,
+            "eng":"Asian Fusion",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S03" : {
+            "kor":"카페/베이커리" ,
+            "eng":"Cafe Bakery",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S04" : {
+            "kor":"양식" ,
+            "eng":"Western food.",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S05" : {
+            "kor":"와인" ,
+            "eng":"Whine",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_CATE_MAIN_S06" : {
+            "kor":"기타" ,
+            "eng":"ETC",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_INIT_TXT" : {
+            "kor":"찾고자 하시는 매장의 초성을 선택해주세요" ,
+            "eng":"Choose the initial consonant of the store you like to find.",
+            "chn":"",
+            "jpn":""
+        },
+        "STORE_NO_RESULT" : {
+            "kor":"검색결과가 없습니다.<br>다른 검색어를 입력해 주세요." ,
+            "eng":"No results were found for your search.<br>Please enter another search term",
+            "chn":"",
+            "jpn":""
+        }
+    },
+
+    "building" : {
+        "BUILDING_TITLE" : {
+            "kor":"전층안내" ,
+            "eng":"All Floor Guide",
+            "chn":"",
+            "jpn":""
+        }
+    },
+
+    "event" : {
+        "EVENT_TITLE" : {
+            "kor":"행사안내" ,
+            "eng":"Event Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "EVENT_NO_RESULT" : {
+            "kor":"진행중인 이벤트가 없습니다" ,
+            "eng":"No Event",
+            "chn":"",
+            "jpn":""
+        }
+
+    },    
+    "membership" : {
+        "EVENT_TITLE" : {
+            "kor":"행사안내" ,
+            "eng":"Event Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "EVENT_NO_RESULT" : {
+            "kor":"진행중인 이벤트가 없습니다" ,
+            "eng":"No Event",
+            "chn":"",
+            "jpn":""
+        },
+        "MEMBERSHIP_MNU_MEMBERSHIP":
+        {
+            "kor":"멤버쉽 서비스",
+            "eng":"Membership service",
+            "chn":"",
+            "jpn":""
+        },
+        "MEMBERSHIP_MNU_GIFT":
+        {
+            "kor":"디지털 기프트 카드",
+            "eng":"Digital Gift Card",
+            "chn":"",
+            "jpn":""
+        },
+        "MEMBERSHIP_URL_W":
+        {
+            "kor":"MB-SERVICE_KIOSK_W_KO.png",
+            "eng":"MB-SERVICE_KIOSK_W_EN.png",
+            "chn":"",
+            "jpn":""
+        },
+        "GIFT_URL_H":
+        {
+            "kor":"MB-GIFT_KIOSK_W_KO.png",
+            "eng":"MB-GIFT_KIOSK_W_EN.png",
+            "chn":"",
+            "jpn":""
+        }
+    },
+        "pet" : {
+        "EVENT_TITLE" : {
+            "kor":"행사안내" ,
+            "eng":"Event Guide",
+            "chn":"",
+            "jpn":""
+        },
+        "EVENT_NO_RESULT" : {
+            "kor":"진행중인 이벤트가 없습니다" ,
+            "eng":"No Event",
+            "chn":"",
+            "jpn":""
+        }
+
+    },    
+	"park" : {
+        "PARK_TITLE" : {
+            "kor" : "주차위치 검색" ,
+            "eng" : "Parking Search",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_DESC_0" : {
+            "kor" : "고객님의 차량번호가 조회되지 않을 경우" ,
+            "eng" : "If you do not see your car number",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_DESC_1" : {
+            "kor" : "1. 주차장에 주차를 하신 후 5분 이내에 검색하시면 검색이 되지 않습니다.<br>2. 차량의 번호판이 훼손되었다면 번호인식이 안될 수도 있습니다.<br> 3. 번호 인식이 되지 않는 곳에 주차를 하셨을 경우 검색이 되지 않습니다." ,
+            "eng" : "1. If you search within 5 minutes after parking in the parking lot, you will not be able to search.<br>2. If the license plate of the vehicle is damaged, the number may not be recognized.<br> 3. If you park in a place where the number is not recognized, the search will not be possible.",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_DESC_2" : {
+            "kor" : "(달주차장 4.5층 옥외주차구역과 지하주차장은 검색되지 않습니다)" ,
+            "eng" : "(It is not possible to search the moonparking lot's 4.5th floor outdoor parking lot and underground parking lot.)",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_RESULT_TITLE" : {
+            "kor" : "차량 검색 결과입니다." ,
+            "eng" : "Car Search Result",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_NO_RESULT" : {
+            "kor" : "검색결과가 없습니다.<br>차량번호를 다시 확인하여 주세요." ,
+            "eng" : "No results were found for your search.<br>Please check the vehicle number again",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_INPUT_NUMBER" : {
+            "kor" : "차량번호를 입력해 주세요." ,
+            "eng" : "Please enter your vehicle number",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_INPUT_SEARCH" : {
+            "kor" : "검색" ,
+            "eng" : "Enter",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_LIST_NUMBER" : {
+            "kor" : "번호" ,
+            "eng" : "Number",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_LIST_FLOOR" : {
+            "kor" : "층" ,
+            "eng" : "Floor",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_LIST_WAYFIND" : {
+            "kor" : "길안내" ,
+            "eng" : "Wayfinding",
+            "chn" : "",
+            "jpn" : ""
+        },
+        "PARK_LIST_ZONE" : {
+            "kor" : "구역" ,
+            "eng" : "Parking Area",
+            "chn" : "",
+            "jpn" : ""
+        }
+    },
+    "facility" : {
+        "FACILITY_TITLE" : {
+            "kor":"시설안내" ,
+            "eng":"Public Facilities",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P01" : {
+            "kor":"엘리베이터" ,
+            "eng":"Elevator",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P02" : {
+            "kor":"에스컬레이터" ,
+            "eng":"Escalator",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P03" : {
+            "kor":"화장실" ,
+            "eng":"Toilet",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P04" : {
+            "kor":"고객상담실" ,
+            "eng":"Customer Center",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P05" : {
+            "kor":"유모차 서비스" ,
+            "eng":"Stroller Service",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P06" : {
+            "kor":"비상구" ,
+            "eng":"Exit",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P07" : {
+            "kor":"택스리펀드" ,
+            "eng":"TAX Refund",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P08" : {
+            "kor":"유아휴게실" ,
+            "eng":"Baby's Lounge",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P09" : {
+            "kor":"사은행사<br>상품권" ,
+            "eng":"Gift<br>Vouchers",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P10" : {
+            "kor":"우리 약국" ,
+            "eng":"Woori Pharmacy",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P11" : {
+            "kor":"ATM" ,
+            "eng":"ATM",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P12" : {
+            "kor":"아이파크몰<br>클리닉 센터" ,
+            "eng":"IPARK Mall<br>Clinic Center",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P13" : {
+            "kor":"연세 밝은<br>미소 치과" ,
+            "eng":"Yonsei<br>Dental Clinic",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P14" : {
+            "kor":"BFO 치과" ,
+            "eng":"BFO Dental Clinic",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P15" : {
+            "kor":"하나은행" ,
+            "eng":"Hana Bank",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P16" : {
+            "kor":"우리은행" ,
+            "eng":"Woori Bank",
+            "chn":"",
+            "jpn":""
+        },
+        "FACILTY_CODE_P17" : {
+            "kor":"물품보관함" ,
+            "eng":"Storage Box",
+            "chn":"",
+            "jpn":""
+        }
+    }
+
+}

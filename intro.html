@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>INFORMATION</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons.png">
+
+    <link rel="stylesheet" href="include/css/comm.css">
+    <link rel="stylesheet" href="include/css/component.css">
+    <link rel="stylesheet" href="include/css/intro.css">
+
+    <script src="include/js/lib/jquery-3.2.1.js"></script>
+    <script src="include/js/lib/jquery.xml2json.js"></script>
+    <script src="include/js/comm.js"></script>
+    <script src="include/js/xml.js"></script>
+    <script src="include/js/intro.js"></script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+    <div class="debug_area" style="width:500px;">
+        <button class="btn" onClick="javascript:onClickDebugLang('KOR');">KOR</button>
+        <button class="btn" onClick="javascript:onClickDebugLang('ENG');">ENG</button>
+        <button class="btn" onClick="javascript:onClickDebugContents('PREV');">←</button>
+        <button class="btn" onClick="javascript:onClickDebugContents('NEXT');">→</button>
+        <button class="btn" onClick="javascript:onClickDebugStart('START');">START</button>
+        <button class="btn" onClick="javascript:onClickDebugStart('STOP');">STOP</button>
+    </div>
+
+    <div>
+        <div class="list_main">
+            <div class="list_bg" id="id_list_bg"><img src="commonfiles/bg/BG.png"></div>
+        </div>
+
+        <div class="zdebug_img" style="display:none;"><img src="images/zguide/0_4_인트로.jpg"></div>
+    </div>
+</body>
+
+</html>
+
+<script language="javascript">
+    var PAGEACTIVEYN = false;
+
+    function setInit() {
+
+        if (parent.MAINPARENTCUSTOMCODE) {
+            $(".debug_area").hide();
+            PAGEACTIVEYN = false;
+            setInitSetting("SUCC");
+        } else {
+            PAGEACTIVEYN = true;
+            setLoadLanguage("include/kiosk_lang.json");
+            setLoadDataContents(kiosk_contents_url);
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(setInit, 50);
+    });
+
+</script>

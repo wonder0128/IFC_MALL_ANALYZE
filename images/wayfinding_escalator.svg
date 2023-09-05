@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="wayfinding_escalator" transform="translate(-126 -772)">
+    <rect id="사각형_602" data-name="사각형 602" width="80" height="80" rx="8" transform="translate(126 772)" fill="#2f4e3f"/>
+    <g id="그룹_659" data-name="그룹 659" transform="translate(140.735 789.531)">
+      <g id="그룹_269" data-name="그룹 269" transform="translate(0 7.058)">
+        <path id="패스_446" data-name="패스 446" d="M613.8,143.231h-9.778a5.5,5.5,0,1,1,0-11h5.221l26.18-26.181h12.441v2.175h-11.54l-26.18,26.181h-6.122a3.325,3.325,0,1,0,0,6.651H612.9l26.182-26.18h8.783v2.175h-7.882Z" transform="translate(-598.524 -106.05)" fill="#fff"/>
+      </g>
+      <g id="그룹_270" data-name="그룹 270" transform="translate(18.874 0)">
+        <path id="패스_447" data-name="패스 447" d="M620.99,108.014a4.366,4.366,0,1,1,4.367-4.366A4.371,4.371,0,0,1,620.99,108.014Zm0-6.557a2.191,2.191,0,1,0,2.193,2.191A2.194,2.194,0,0,0,620.99,101.457Z" transform="translate(-616.623 -99.282)" fill="#fff"/>
+      </g>
+      <g id="그룹_271" data-name="그룹 271" transform="translate(18.874 9.684)">
+        <path id="패스_448" data-name="패스 448" d="M618.8,124.2h-2.175V112.933a4.367,4.367,0,0,1,8.734,0v4.714h-2.175v-4.714a2.192,2.192,0,0,0-4.385,0Z" transform="translate(-616.623 -108.568)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

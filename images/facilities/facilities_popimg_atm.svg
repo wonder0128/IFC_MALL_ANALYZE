@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="facility_list_img_atm" transform="translate(-40.826 -38.565)">
+    <path id="facility_list" d="M0,0H100V100H0Z" transform="translate(40.826 38.565)" fill="none"/>
+    <g id="그룹_1731" data-name="그룹 1731" transform="translate(71.314 53.293)">
+      <g id="그룹_1730" data-name="그룹 1730" transform="translate(0)">
+        <path id="패스_3538" data-name="패스 3538" d="M502.028,1649.038v23.148h5.655v-3.517h-2.115V1652.53h32.951v16.139h-2.139v3.517h5.671v-23.148Z" transform="translate(-502.028 -1649.038)" fill="#0f0f0f"/>
+        <path id="패스_3539" data-name="패스 3539" d="M508.237,1662.448l.591-3.581h-1.4l.729,3.581Z" transform="translate(-485.032 -1618.097)" fill="#0f0f0f"/>
+        <path id="패스_3540" data-name="패스 3540" d="M506.616,1662.448l.737-3.581h-1.4l.608,3.581Z" transform="translate(-489.675 -1618.097)" fill="#0f0f0f"/>
+        <path id="패스_3541" data-name="패스 3541" d="M507.481,1658.5H507.4l-.729,3.459h1.507Z" transform="translate(-487.412 -1619.253)" fill="#0f0f0f"/>
+        <rect id="사각형_1658" data-name="사각형 1658" width="26.923" height="3.492" transform="translate(6.555 8.54)" fill="#0f0f0f"/>
+        <path id="패스_3542" data-name="패스 3542" d="M503.821,1708.3h25.163v-55.678H503.821Zm4.737-27.9h2.2l-.382-1.809h-1.817v-1.759h1.427l-.73-3.476h2.514l.622,3.476h1.987l.767-3.509h2.576l.713,3.509h2.02l.614-3.476h2.464l-.763,3.476h1.477v1.759H522.4l-.386,1.809h2.228v1.709h-2.6l-.78,3.563h-2.642l-.776-3.563h-2.132l-.743,3.563h-2.667l-.768-3.563h-2.58Z" transform="translate(-496.382 -1637.756)" fill="#0f0f0f"/>
+      </g>
+    </g>
+  </g>
+</svg>

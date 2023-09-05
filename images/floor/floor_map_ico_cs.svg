@@ -1,0 +1,14 @@
+<svg id="floor_map_ico_cs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_994" data-name="사각형 994" width="16.954" height="16.954" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_950" data-name="사각형 950" width="25" height="25" rx="3" transform="translate(0 0)" fill="#646464"/>
+  <g id="그룹_1604" data-name="그룹 1604" transform="translate(4.023 3.934)">
+    <g id="그룹_1603" data-name="그룹 1603" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="패스_3213" data-name="패스 3213" d="M8.478,16.953a8.477,8.477,0,1,1,8.477-8.476,8.486,8.486,0,0,1-8.477,8.476m0-16.019A7.543,7.543,0,1,0,16.02,8.478,7.551,7.551,0,0,0,8.478.934" transform="translate(0 0)" fill="#fff"/>
+      <path id="패스_3214" data-name="패스 3214" d="M8.314,3.245h1.5V4.758h-1.5ZM8.4,6.513H9.72v7.654H8.4Z" transform="translate(-0.586 -0.228)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

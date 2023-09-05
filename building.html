@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>SSG INFORMATION</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons.png">
+
+    <link rel="stylesheet" href="include/css/comm.css">
+    <link rel="stylesheet" href="include/css/component.css">
+    <link rel="stylesheet" href="include/css/building.css">
+
+    <script src="include/js/lib/jquery-3.2.1.js"></script>
+    <script src="include/js/lib/jquery.xml2json.js"></script>
+    <script src="include/js/comm.js"></script>
+    <script src="include/js/xml.js"></script>
+    <script src="include/js/building.js"></script>
+</head>
+
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+    <div class="debug_area" style="width:500px;">
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('KOR');">KOR</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('ENG');">ENG</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('CHN');">CHN</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugLang('JPN');">JPN</button>
+        <button class="btn" onMouseDown="javascript:onClickDebug01('');">SEARCH</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('START');">START</button>
+        <button class="btn" onMouseDown="javascript:onClickDebugInit('STOP');">STOP</button>
+    </div>
+
+    <div class="content">
+        <div class="title_area">
+            <div class="main_title lang_code_names" lang_code="BUILDING_TITLE">전층 안내</div>
+        </div>
+
+
+        <div class="contents">
+
+            <div id="id_txt_main" class="txt_main">
+                <img id="id_img_building_desc" src="">
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="zdebug_img"><img src="images/zguide/6_facilities_1.png"></div>
+    -->
+</body>
+
+</html>
+
+<script language="javascript">
+
+    var PAGEACTIVEYN = false;
+
+    function setInit(){
+
+        if(parent.MAINPARENTCUSTOMCODE){
+            $(".debug_area").hide();
+            PAGEACTIVEYN = false;
+            setInitSetting("SUCC");
+        }else{
+            PAGEACTIVEYN = true;
+            setLoadLanguage("include/kiosk_lang.json");
+            setLoadDataContents(kiosk_contents_url);
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', function(){
+        setTimeout(setInit,50);
+    });
+</script>
