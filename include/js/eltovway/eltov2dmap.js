@@ -103,7 +103,7 @@ class Eltov2DMap{
     }
 
     setInit(){
-        console.log("setInit()");
+        // console.log("setInit()");
 
 
         var m_this = this;
@@ -121,7 +121,7 @@ class Eltov2DMap{
     }
 
     setLoadDataEnd(p_result,p_data){
-        console.log("setLoadDataEnd()");
+        // console.log("setLoadDataEnd()");
 
 
         var m_this = this;
@@ -140,7 +140,7 @@ class Eltov2DMap{
     }
 
     setLoadRouteEnd(p_result,p_data){
-        console.log("setLoadRouteEnd()");
+        // console.log("setLoadRouteEnd()");
 
         if(p_result == "SUCC"){
             this.m_load_route = p_data;
@@ -152,8 +152,7 @@ class Eltov2DMap{
     }
 
     setInitSetting(){
-        console.log("setInitSetting()");
-
+        // console.log("setInitSetting()");
 
         var i = 0, j = 0;
         var i_real_scale = 0;
@@ -251,8 +250,7 @@ class Eltov2DMap{
     }
 
     setInitLoadFloor(){
-        console.log("setInitLoadFloor()");
-
+        // console.log("setInitLoadFloor()");
 
         var i = 0, j = 0, k = 0;
         var i_top = 0, i_start = 0;
@@ -576,8 +574,7 @@ class Eltov2DMap{
     /////////////////////////////////////////
     // MOVE EVENT
     onMouseDownFloor(p_evt){
-        console.log("onMouseDownFloor()");
-
+        // console.log("onMouseDownFloor()");
 
         if(this.m_wayfind_conf.mode == "TWOWAY") return;
         if(this.m_wayfind_conf.mode == "THREEWAY") return;
@@ -631,7 +628,7 @@ class Eltov2DMap{
 
 
     onMouseUpFloor(p_evt){
-        console.log("onMouseUpFloor()");
+        // console.log("onMouseUpFloor()");
 
         this.m_move_conf.mode = DRAG_MODE_NONE;
         if(this.m_move_conf.type == DRAG_TYPE_SCALE){
@@ -646,8 +643,7 @@ class Eltov2DMap{
     // }
 
     onMouseMoveFloor(p_evt){
-        console.log("onMouseMoveFloor()");
-
+        // console.log("onMouseMoveFloor()");
 
         if(this.m_wayfind_conf.mode == "TWOWAY") return;
         if(this.m_wayfind_conf.mode == "THREEWAY") return;
@@ -737,8 +733,7 @@ class Eltov2DMap{
 
 
     onMouseWheelFloor(p_evt){
-
-        console.log("onMouseWheelFloor()");
+        // console.log("onMouseWheelFloor()");
 
         var real_evt;
         if(p_evt.data != undefined){  real_evt = p_evt.data.originalEvent;
@@ -761,8 +756,7 @@ class Eltov2DMap{
     // MAIN FUNCTION
 
     setCallWebToMap(p_param){
-        console.log("setCallWebToMap()");
-
+        // console.log("setCallWebToMap()");
 
         //console.log("setCallWebToMap >>>> ");
         //console.log(p_param);
@@ -803,7 +797,7 @@ class Eltov2DMap{
     }
 
     setChgLang(p_lang){
-        console.log("setChgLang()");
+        // console.log("setChgLang()");
 
         var i = 0;
         for(i = 0; i < this.m_app_floors.length; i++){
@@ -873,7 +867,7 @@ class Eltov2DMap{
     }
 
     setChgScale(p_type){
-        console.log("setChgScale()");
+        // console.log("setChgScale()");
 
 
         var obj_disp = this.m_app_floors[this.m_conf.curr_floor_num].CLS_FLOOR.getMainDisp();
@@ -912,7 +906,7 @@ class Eltov2DMap{
     // }
 
     setStoreInfo(p_id){
-        console.log("setStoreInfo()");
+        // console.log("setStoreInfo()");
 
         if(this.m_wayfind_conf.mode == "TWOWAY") return;
         if(this.m_wayfind_conf.mode == "THREEWAY") return;
@@ -932,7 +926,7 @@ class Eltov2DMap{
 
     // 공용시설 찾기
     setWayFindPub(p_param){
-        console.log("setWayFindPub()");
+        // console.log("setWayFindPub()");
         var i = 0, j = 0, i_cnt = 0;
         var i_floor = 0, i_down = 0, i_up = 0;
         var i_len = 0, i_min_len = -1;
@@ -1039,7 +1033,7 @@ class Eltov2DMap{
     //////////////////////////////////////////////////////////////////////////////////
     // WAYFIND STORE
     setWayFindInfo(p_sect,p_param){
-        console.log("setWayFindInfo()");
+        // console.log("setWayFindInfo()");
 
         var i = 0, j = 0,k = 0;
         var i_way_start = 0;
@@ -1199,7 +1193,7 @@ class Eltov2DMap{
     /////////////////////////////////////////////////////////
     // WAYFIND
     setWayFindStart(p_move_type){
-        console.log("setWayFindStart()");
+        // console.log("setWayFindStart()");
 
         var i = 0, j = 0, k = 0;
         var i_len = 0,i_min_len = -1, i_min_gate = -1;
@@ -1442,7 +1436,7 @@ class Eltov2DMap{
     // WAYFIND UTIL
     // 이동가능수단 개수 찾기
     getFindMovePubCnt(p_param){
-        console.log("getFindMovePubCnt()");
+        // console.log("getFindMovePubCnt()");
 
         var i = 0, j = 0, k = 0;
         var i_start = 0, i_target = 0;
@@ -1510,7 +1504,7 @@ class Eltov2DMap{
     // 리턴이 Gate번호를 리턴한다. 만일 Gate가 1개 일경우에는 0을 반환하고  2개 이상일 경우에는 가장 짧은 번호를 리턴한다.
     // ex) Gate가 2개일경우 0,1 중리턴, Gate가 3개 일경우 0,1,2리턴
     getFindMovePubInfo(p_param){
-        console.log("getFindMovePubInfo()");
+        // console.log("getFindMovePubInfo()");
         var i = 0, j = 0, k = 0;
         var i_err = 0, i_ret = 0;
         var i_len = 0,i_min_len = -1, i_target_ret = -1;
@@ -1642,7 +1636,7 @@ class Eltov2DMap{
     }
 
     getFindFloorObj(p_param){
-        console.log("getFindFloorObj()");
+        // console.log("getFindFloorObj()");
 
         var i = 0;
         var obj;
@@ -1659,7 +1653,7 @@ class Eltov2DMap{
 
     // 에스컬레이트를 위하여 위아래 찾기
     getMoveUpDown(p_b_code,p_s_floor,p_t_floor){
-        console.log("getMoveUpDown()");
+        // console.log("getMoveUpDown()");
 
         var i = 0;
         var i_start = 0, i_target = 0;
@@ -1682,7 +1676,7 @@ class Eltov2DMap{
     /////////////////////////////////////////////////////////////////////////////////////////
     // 길안내 시작
     setWayFindDrawEnd(){
-        console.log("setWayFindDrawEnd()");
+        // console.log("setWayFindDrawEnd()");
 
         var m_this = this;
         var obj;
@@ -1923,7 +1917,7 @@ class Eltov2DMap{
     // OPTIONS 
 
     setChkLimit(p_scale){
-        console.log("setChkLimit()");
+        // console.log("setChkLimit()");
 
         var i_scale = 0;
         if(p_scale <= 0){
@@ -1952,7 +1946,7 @@ class Eltov2DMap{
     // }
 
     setChkOpt(p_opt){
-        console.log("setChkOpt()");
+        // console.log("setChkOpt()");
 
         // console.log(p_opt);
 

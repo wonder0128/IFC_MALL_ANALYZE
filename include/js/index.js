@@ -72,8 +72,7 @@ function setInitSetting(p_result) {
     }
 
     // console.log("setInitSetting");
-
-
+0
     gl_load_data = gl_xml_conf.xml_data;
     gl_load_route = gl_xml_conf.xml_route;
 
@@ -258,10 +257,10 @@ function setInitSettingEnd() {
         document["frame_pet"].setInitConfig(gl_load_data,division);
     }
 
+    // document["frame_intro"].setMainStop();
+    // document["frame_intro"].setMainStart();
     document["frame_floor"].setMainStop();
     document["frame_floor"].setMainStart();
-    // document["frame_floor"].setMainStop();
-    // document["frame_floor"].setMainStart();
 
     setTimeout(setInitSettingEnd02, 500);
 }
@@ -605,11 +604,11 @@ function setMainViewOpen(p_mnu, p_obj) {
         $(".bottom_menu .bottom_btn_li .bottom_btn").removeClass("active");
         $($(".bottom_menu .bottom_btn_li .bottom_btn")[t_num]).addClass("active");
 
-        if ($("#id_main_frame_floor").css("display") != "none") {
-            // $("#id_main_frame_intro").fadeOut();
-            $("#id_main_frame_floor").fadeOut();
-            if (typeof (document["frame_floor"].setMainStop) == 'function') {
-                document["frame_floor"].setMainStop();
+        if ($("#id_main_frame_intro").css("display") != "none") {
+            $("#id_main_frame_intro").fadeOut();
+            // $("#id_main_frame_floor").fadeOut();
+            if (typeof (document["frame_intro"].setMainStop) == 'function') {
+                document["frame_intro"].setMainStop();
                 str_statics = gl_arr_mnu_statics_code[i];
                 var statics_obj = {
                     "sect": "MENU",
@@ -668,8 +667,8 @@ function setScreenAuto() {
     if ($("#id_main_screen").css("display") == "none") {
         setTimeoutID = setTimeout(setMainTimeOut, gl_main_conf.notice_ptime);
         $("#id_main_screen").fadeIn();
-        if (typeof (document["frame_floor"].setMainStop) == 'function') {
-            document["frame_floor"].setMainStop();
+        if (typeof (document["frame_intro"].setMainStop) == 'function') {
+            document["frame_intro"].setMainStop();
         }
         setMainViewOpen("", obj);
     }
@@ -707,8 +706,8 @@ function onClickScreenSaver() {
     $("#id_main_screen").fadeOut();
 
     var obj = {};
-    if (typeof (document["frame_floor"].setMainStart) == 'function') {
-        document["frame_floor"].setMainStart(obj);
+    if (typeof (document["frame_intro"].setMainStart) == 'function') {
+        document["frame_intro"].setMainStart(obj);
     }
 
     $("#id_main_frame_floor").show();

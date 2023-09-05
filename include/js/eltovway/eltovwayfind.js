@@ -769,7 +769,7 @@ class EltovWayfind{
     
 
     setMakeNearLine(p_obj,p_near){
-        console.log("setMakeNearLine()");
+        // console.log("setMakeNearLine()");
 
         var lines = {
             name : p_near.name,
@@ -785,7 +785,7 @@ class EltovWayfind{
 
     // 이미 있는지 확인하자    
     getNodeExist(p_pos){
-        console.log("getNodeExist()");
+        // console.log("getNodeExist()");
 
         var i = 0;
         var b_found = false;

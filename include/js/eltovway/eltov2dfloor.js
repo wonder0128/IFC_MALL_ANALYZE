@@ -64,7 +64,7 @@ class Eltov2DFloor{
     }
 
     setInit(p_opt,p_floor_div,p_conf,p_load_data,p_load_route,p_pub_icons){
-        console.log("setInit()");
+        // console.log("setInit()");
         // console.log('p_opt' , p_opt);
         // console.log('p_conf', p_conf);
 
@@ -193,7 +193,7 @@ class Eltov2DFloor{
     }
 
     setInitSetting(){
-        console.log("setInitSetting()");
+        // console.log("setInitSetting()");
 
         var i = 0, j = 0, i_tmp = 0;
         var i_pos_x = 0, i_pos_y = 0, i_width = 0, i_height = 0;
@@ -608,19 +608,19 @@ class Eltov2DFloor{
     // }
 
     getMainDisp(){
-        console.log("getMainDisp()");
+        // console.log("getMainDisp()");
 
         return this.m_main_disp;
     }
 
     getMainDispContainer(){
-        console.log("getMainDispContainer()");
+        // console.log("getMainDispContainer()");
 
         return this.m_main_container;
     }
 
     setMainDispPos(p_x,p_y,p_scale){
-        console.log("setMainDispPos()");
+        // console.log("setMainDispPos()");
 
         // console.log(p_scale, p_scale);
         if(p_scale > 0){
@@ -635,7 +635,7 @@ class Eltov2DFloor{
     }
 
     setCurrIconHidden(){
-        console.log("setCurrIconHidden()");
+        // console.log("setCurrIconHidden()");
 
         if(this.m_icon_curr != null){
             this.m_icon_curr.style.display = "none";
@@ -643,7 +643,7 @@ class Eltov2DFloor{
     }
 
     setResetPosition(p_type){
-        console.log("setResetPosition()");
+        // console.log("setResetPosition()");
 
         var str_pos = "";
         if(p_type == "HIDE"){
@@ -794,7 +794,7 @@ class Eltov2DFloor{
     // }
 
     setWayFindTweenStop(){
-        console.log("setWayFindTweenStop()");
+        // console.log("setWayFindTweenStop()");
 
         var i = 0, i_num = 0;
         var obj_pub;
@@ -816,8 +816,7 @@ class Eltov2DFloor{
     }
 
     setTargetIcon(p_pos_x,p_pos_y){
-        console.log("setTargetIcon()");
-
+        // console.log("setTargetIcon()");
 
         this.setWayFindTweenStop();
 
@@ -834,7 +833,7 @@ class Eltov2DFloor{
 
     // WAYFIND
     setWayFindStart(p_opt,p_pos_s,p_target_x,p_target_y){
-        console.log("setWayFindStart()");
+        // console.log("setWayFindStart()");
 
         var str_ret = "";
         var i = 0, j = 0, k = 0;
@@ -925,7 +924,7 @@ class Eltov2DFloor{
 
 
     setWayFindDrawLine(p_action_type){
-        console.log("setWayFindDrawLine()");
+        // console.log("setWayFindDrawLine()");
 
         var i = 0;
 
@@ -971,7 +970,7 @@ class Eltov2DFloor{
     }
 
     setWayFindDrawEnd(){
-        console.log("setWayFindDrawEnd()");
+        // console.log("setWayFindDrawEnd()");
 
         //this.m_my_conf.is_wayfind = true;
         this.m_parent.setWayFindDrawEnd();
@@ -989,7 +988,7 @@ class Eltov2DFloor{
     //     return this.m_cls_way.m_arr_wayfind;
     // }
     getWayFindTotalLength(){
-        console.log("getWayFindTotalLength()");
+        // console.log("getWayFindTotalLength()");
 
         return this.m_cls_way.getTotalLength();
     }
@@ -1064,8 +1063,7 @@ class Eltov2DFloor{
     /////////////////////////////////////////////
     // CLICK EVENT
     onClickInfoStore(p_evt,p_obj){
-        console.log("onClickInfoStore()");
-
+        // console.log("onClickInfoStore()");
 
         var real_evt;
         if(p_evt.data != undefined){  real_evt = p_evt.data.originalEvent;
