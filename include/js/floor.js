@@ -504,6 +504,7 @@ function setFloorInfo(p_type, p_b_code, p_floor) {
 
         p_b_code = "IFC";
     }
+    
     var t_floor_title = "";
 
     for (i = 0; i < gl_arr_floors.length; i++) {

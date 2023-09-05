@@ -782,7 +782,7 @@ function setMainInterval() {
     // 인트로 체크
     if (time_gap > 60) {
         gl_main_conf.time_last = time_curr;
-        setMainViewOpen("home");
+        setMainViewOpen("floor");
     }
 
     // 시스템 체크
