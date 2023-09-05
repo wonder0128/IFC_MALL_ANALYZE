@@ -41,7 +41,7 @@ class EltovWayfind{
     }
 
     setInitXml(){
-        console.log("setInitXml()");
+        // console.log("setInitXml()");
 
 
         var i = 0, j = 0, k = 0;
@@ -182,7 +182,7 @@ class EltovWayfind{
     }
 
     setFindNearLines(){
-        console.log("setFindNearLines()");
+        // console.log("setFindNearLines()");
 
         var i = 0, j = 0;
         var obj,obj2;
@@ -218,7 +218,7 @@ class EltovWayfind{
 
 
     setWayFindStart(p_conf,p_start,p_target){
-        console.log("setWayFindStart()");
+        // console.log("setWayFindStart()");
 
 
         var i = 0, i_cnt = 0, i_len = 0,i_cross = 0;
@@ -436,7 +436,7 @@ class EltovWayfind{
 
     // 실제 길찾기 함수
     getFindPathIng(p_type,p_start,p_end){
-        console.log("getFindPathIng()");
+        // console.log("getFindPathIng()");
 
         var i = 0,j = 0,k = 0;
         var i_path_cnt = 0;
@@ -537,7 +537,7 @@ class EltovWayfind{
 
 
     getTotalLength(){
-        console.log("getTotalLength()");
+        // console.log("getTotalLength()");
 
         var i = 0;
         var i_total_len = 0;
@@ -561,7 +561,7 @@ class EltovWayfind{
     // }
 
     setDraw2DWayLine(p_option,p_data,p_icon,p_fnc){
-        console.log("setDraw2DWayLine()");
+        // console.log("setDraw2DWayLine()");
 
 
         var i = 0;

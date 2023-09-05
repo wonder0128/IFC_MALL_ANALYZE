@@ -17,14 +17,14 @@ class EltovWayUtil{
 
     // 널체크 
     getChkNull(p_src,p_default){
-        console.log("getChkNull()");
+        // console.log("getChkNull()");
 
         if(p_src == null || p_src == undefined){ return p_default;
         }else{ return p_src + ""; }
     }
 
     getPointAngle(p_my,p_pos1,p_pos2){
-        console.log("getPointAngle()");
+        // console.log("getPointAngle()");
 
 
         var m = 0,n = 0,c = 0;
@@ -56,7 +56,7 @@ class EltovWayUtil{
     }
 
     getPointCross(p_my,p_angle,p_pos1,p_pos2){
-        console.log("getPointCross()");
+        // console.log("getPointCross()");
 
 
         var m = 0,n = 0,c = 0;
@@ -90,7 +90,7 @@ class EltovWayUtil{
 
     // 2점의 전체 길이
     getPointLen2(p_p1,p_p2){
-        console.log("getPointLen2()");
+        // console.log("getPointLen2()");
 
         var i_len = 0;
 
@@ -116,7 +116,7 @@ class EltovWayUtil{
     // 인접한 동선
 
     getNearPos(p_p1,p_p2){
-        console.log("getNearPos()");
+        // console.log("getNearPos()");
 
         if((Math.abs(p_p1.x - p_p2.x) <= this.m_near_len && Math.abs(p_p1.y - p_p2.y) <= this.m_near_len )){
             return true;
@@ -134,7 +134,7 @@ class EltovWayUtil{
     // }
 
     getPosTransform(p_obj){
-        console.log("getPosTransform()");
+        // console.log("getPosTransform()");
 
         var i = 0;
         var ret_obj = { left:0, top:0, scale:1, rotate:0 };
@@ -176,7 +176,7 @@ class EltovWayUtil{
     }
 
     getCalLimit(p_disp_width,p_disp_height,p_map_width,p_map_height,p_scale){
-        console.log("getCalLimit()");
+        // console.log("getCalLimit()");
 
 
         var ret_obj = { left:0, top:0, right:0, bottom:0 };
@@ -195,7 +195,7 @@ class EltovWayUtil{
     }
 
     getCalScale(p_canvas,p_map){  // CANVAS크기, 맵크기
-        console.log("getCalScale()");
+        // console.log("getCalScale()");
 
         var new_scale = {w:p_canvas.w,h:p_canvas.h};
 
@@ -220,8 +220,7 @@ class EltovWayUtil{
     }
 
     getChgAnglePos(p_pos){
-        console.log("getChgAnglePos()");
-
+        // console.log("getChgAnglePos()");
 
         var ret_pos = {x:0,y:0};
 

@@ -806,7 +806,7 @@ class Eltov2DMap{
     }
 
     setChgFloor(p_type,p_b_code,p_floor){
-        console.log("setChgFloor()");
+        // console.log("setChgFloor()");
 
         var i = 0, i_cnt = 0, i_start = 0;
         var obj;

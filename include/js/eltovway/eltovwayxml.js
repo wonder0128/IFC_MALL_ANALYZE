@@ -16,7 +16,7 @@ class EltovLoader{
     //////////////////////////////////////////////////////////////
     // 리턴할 페이지 불러오기
     setLoadDataContents(p_url,p_fnc){
-        console.log("setLoadDataContents()");
+        // console.log("setLoadDataContents()");
 
         var xml_http;
 
@@ -35,7 +35,7 @@ class EltovLoader{
     }
 
     onReadXmlDataContents(p_xml_http,p_fnc){
-        console.log("onReadXmlDataContents()");
+        // console.log("onReadXmlDataContents()");
 
         
         var ret_code = "SUCC";
@@ -300,7 +300,7 @@ class EltovLoader{
     }
 
     setLoadRouteContents(p_url,p_fnc){
-        console.log("setLoadRouteContents()");
+        // console.log("setLoadRouteContents()");
 
         var xml_http;
         var m_this = this;
@@ -319,7 +319,7 @@ class EltovLoader{
     }
 
     onReadXmlRouteContents(p_xml_http,p_fnc){
-        console.log("onReadXmlRouteContents()");
+        // console.log("onReadXmlRouteContents()");
         var ret_code = "SUCC";
 
         var xml_obj = new Object();
@@ -705,7 +705,7 @@ class EltovLoader{
     // }
 
     getCvtXmlTag(p_src){
-        console.log("getCvtXmlTag()");
+        // console.log("getCvtXmlTag()");
 
         if(p_src == null || p_src == undefined){
             return "";
@@ -743,7 +743,7 @@ class EltovLoader{
 
 
     getCvtXmlNum(p_src,p_default){
-        console.log("getCvtXmlNum()");
+        // console.log("getCvtXmlNum()");
 
         if(p_default == undefined) p_default = 0;
         if(p_src == null ) return p_default;
