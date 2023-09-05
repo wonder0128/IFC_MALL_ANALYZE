@@ -198,65 +198,65 @@ function setInitSettingEnd() {
         "width": "40%"
     });
     var division = window.innerWidth > window.innerHeight ? 'W':'H';
-    // if (typeof (document["frame_intro"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig INTRO");
-    //     document["frame_intro"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_intro"].setInitConfig(gl_load_data);
-    // }
+    if (typeof (document["frame_intro"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig INTRO");
+        document["frame_intro"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_intro"].setInitConfig(gl_load_data);
+    }
     if (typeof (document["frame_floor"].PAGEACTIVEYN) != 'undefined') {
         console.log("setInitConfig FLOOR");
         document["frame_floor"].setInitConfigLang(gl_jsop_lang_data);
         document["frame_floor"].setInitConfig(gl_load_data);
     }
 
-    // // if (typeof (document["frame_store"].PAGEACTIVEYN) != 'undefined') {
-    // //     console.log("setInitConfig STORE");
-    // //     document["frame_store"].setInitConfigLang(gl_jsop_lang_data);
-    // //     document["frame_store"].setInitConfig(gl_load_data);
-    // // }
-
-    // if (typeof (document["frame_food"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig FOOD");
-    //     document["frame_food"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_food"].setInitConfig(gl_load_data);
+    // if (typeof (document["frame_store"].PAGEACTIVEYN) != 'undefined') {
+    //     console.log("setInitConfig STORE");
+    //     document["frame_store"].setInitConfigLang(gl_jsop_lang_data);
+    //     document["frame_store"].setInitConfig(gl_load_data);
     // }
 
-    // if (typeof (document["frame_event"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig EVENT");
-    //     document["frame_event"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_event"].setInitConfig(gl_load_data,division);
-    // }
+    if (typeof (document["frame_food"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig FOOD");
+        document["frame_food"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_food"].setInitConfig(gl_load_data);
+    }
 
-    // if (typeof (document["frame_nearby"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig NEARBY");
-    //     document["frame_nearby"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_nearby"].setInitConfig(gl_load_data);
-    // }
+    if (typeof (document["frame_event"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig EVENT");
+        document["frame_event"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_event"].setInitConfig(gl_load_data,division);
+    }
 
-    // if (typeof (document["frame_discount"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig DISCOUNT");
-    //     document["frame_discount"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_discount"].setInitConfig(gl_load_data,division);
-    // }
+    if (typeof (document["frame_nearby"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig NEARBY");
+        document["frame_nearby"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_nearby"].setInitConfig(gl_load_data);
+    }
 
-    // if (typeof (document["frame_facility"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig FACILITY");
-    //     document["frame_facility"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_facility"].setInitConfig(gl_load_data);
-    // }
+    if (typeof (document["frame_discount"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig DISCOUNT");
+        document["frame_discount"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_discount"].setInitConfig(gl_load_data,division);
+    }
 
-    // if (typeof (document["frame_membership"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig MEMBERSHIP");
-    //     document["frame_membership"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_membership"].setInitConfig(gl_load_data,division);
-    // }
+    if (typeof (document["frame_facility"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig FACILITY");
+        document["frame_facility"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_facility"].setInitConfig(gl_load_data);
+    }
 
-    // if (typeof (document["frame_pet"].PAGEACTIVEYN) != 'undefined') {
-    //     console.log("setInitConfig PET");
+    if (typeof (document["frame_membership"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig MEMBERSHIP");
+        document["frame_membership"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_membership"].setInitConfig(gl_load_data,division);
+    }
 
-    //     document["frame_pet"].setInitConfigLang(gl_jsop_lang_data);
-    //     document["frame_pet"].setInitConfig(gl_load_data,division);
-    // }
+    if (typeof (document["frame_pet"].PAGEACTIVEYN) != 'undefined') {
+        console.log("setInitConfig PET");
+
+        document["frame_pet"].setInitConfigLang(gl_jsop_lang_data);
+        document["frame_pet"].setInitConfig(gl_load_data,division);
+    }
 
     document["frame_floor"].setMainStop();
     document["frame_floor"].setMainStart();
@@ -307,41 +307,41 @@ function setInitSettingEnd03() {
     });
 
 
-    // if (typeof (document["frame_intro"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_intro"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_store"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_store"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_food"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_food"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_event"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_event"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_nearby"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_nearby"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_discount"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_discount"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_facility"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_facility"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_membership"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_membership"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
-    // if (typeof (document["frame_pet"].PAGEACTIVEYN) == 'undefined') {
-    //     i_load_err++;
-    // }
+    if (typeof (document["frame_pet"].PAGEACTIVEYN) == 'undefined') {
+        i_load_err++;
+    }
 
     //return;
 }
@@ -607,7 +607,7 @@ function setMainViewOpen(p_mnu, p_obj) {
 
         if ($("#id_main_frame_floor").css("display") != "none") {
             // $("#id_main_frame_intro").fadeOut();
-            // $("#id_main_frame_floor").fadeOut();
+            $("#id_main_frame_floor").fadeOut();
             if (typeof (document["frame_floor"].setMainStop) == 'function') {
                 document["frame_floor"].setMainStop();
                 str_statics = gl_arr_mnu_statics_code[i];
@@ -668,8 +668,8 @@ function setScreenAuto() {
     if ($("#id_main_screen").css("display") == "none") {
         setTimeoutID = setTimeout(setMainTimeOut, gl_main_conf.notice_ptime);
         $("#id_main_screen").fadeIn();
-        if (typeof (document["frame_intro"].setMainStop) == 'function') {
-            document["frame_intro"].setMainStop();
+        if (typeof (document["frame_floor"].setMainStop) == 'function') {
+            document["frame_floor"].setMainStop();
         }
         setMainViewOpen("", obj);
     }
@@ -707,11 +707,11 @@ function onClickScreenSaver() {
     $("#id_main_screen").fadeOut();
 
     var obj = {};
-    if (typeof (document["frame_intro"].setMainStart) == 'function') {
-        document["frame_intro"].setMainStart(obj);
+    if (typeof (document["frame_floor"].setMainStart) == 'function') {
+        document["frame_floor"].setMainStart(obj);
     }
 
-    $("#id_main_frame_intro").show();
+    $("#id_main_frame_floor").show();
     //setMainViewOpen("",obj);
 
     clearTimeout(setTimeoutID);

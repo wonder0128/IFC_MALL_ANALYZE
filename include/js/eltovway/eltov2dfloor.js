@@ -692,9 +692,9 @@ class Eltov2DFloor{
                 // console.log('m_main_disp', this.m_main_disp);
                 // console.log('m_main_container', this.m_main_container);
                 if(p_type == "INIT"){
-                    this.m_main_disp.style.transform = "translate(" + (720) + "px," + (this.m_my_conf.top) + "px) scale(" + this.m_my_conf.scale_init + "," + this.m_my_conf.scale_init + ")";
+                    this.m_main_disp.style.transform = "translate(" + (0) + "px," + (this.m_my_conf.top) + "px) scale(" + this.m_my_conf.scale_init + "," + this.m_my_conf.scale_init + ")";
                 }else{  //
-                    this.m_main_disp.style.transform = "translate(" + (720) + "px," + (this.m_my_conf.top) + "px) scale(" + this.m_my_conf.scale_init + "," + this.m_my_conf.scale_init + ")";
+                    this.m_main_disp.style.transform = "translate(" + (0) + "px," + (this.m_my_conf.top) + "px) scale(" + this.m_my_conf.scale_init + "," + this.m_my_conf.scale_init + ")";
                 }
                 this.m_main_container.style.transform = "translate(" + (0- (this.m_my_conf.map_width)/2) + "px," + (0 - (this.m_my_conf.map_height)/2) + "px)";
             }else{
